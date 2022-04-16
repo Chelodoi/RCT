@@ -1,8 +1,4 @@
-import { toHaveStyle } from '@testing-library/jest-dom/dist/matchers';
 import React, { Component } from 'react';
-
-
-
 export class Input extends Component{
   render(){
     return <>
