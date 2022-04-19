@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import { Form } from './components/FormClass/Form'
+import { Message } from './components/Message'
 
 
 export const App = () => {
   
-    return <Form />
+    return <Message txt ="Этот текст передали пропсом в компонент Message из App.jsx"/>
   
 }

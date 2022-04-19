@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(144, 144, 144);
+  padding: 10px;
+  
+}
+
+.message {
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+  min-height: 15px;
+  border: 2px solid green;  
+}
