@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Message } from './components/Message'
+import { Form } from './components/hw1/Form'
 
 
 export const App = () => {
