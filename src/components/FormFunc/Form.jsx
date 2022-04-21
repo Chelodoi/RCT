@@ -3,7 +3,7 @@ import { Input } from './Input';
 import { Button } from './Button';
 
 export const Form = () => {
-    const [name, setName] = useState('click')
+    const [name] = useState('click')
     const [value, setValue] = useState('')
     const [messages, setMessages] = useState([])
     const [visible, setVisible] = useState('true')
@@ -15,20 +15,20 @@ export const Form = () => {
     const handleChange = (ev) => {
         setValue(ev.target.value)
     }
-    
-            return <>
-            {visible && <ul>
-            {messages.map(message=>
+
+    return <>
+        {visible && <ul>
+            {messages.map(message =>
                 <li>{message}</li>
             )}
-            </ul>}
+        </ul>}
 
-                <Input change ={handleChange} value={value}/>
-                <Button name={name} click={handleClick}/>
+        <Input change={handleChange} value={value} />
+        <Button name={name} click={handleClick} />
 
-                <button onClick={() => setVisible(!visible )}>
-                    {visible ? 'hide' : 'show'}
-                </button>
-            </>     
-    
+        <button onClick={() => setVisible(!visible)}>
+            {visible ? 'hide' : 'show'}
+        </button>
+    </>
+
 }
