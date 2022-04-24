@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "./components/HomeworkFunc/Form";
+import { Form } from "./components/FormFunc/Form";
 import "./App.css";
 
 export const App = () => {
