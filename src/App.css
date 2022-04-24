@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 450px;
+  padding: 5px;
+  background-color: rgb(190, 235, 252);
+  border-radius: 3%;
+}
+
+.messages {
+  height: 387px;
+  margin-bottom: 5px;
+  overflow: auto;
+  -webkit-scrollbar: none;
+  
+}
+
+.messageList {
+  list-style-type: none;
+}
+
+.sendMessage {
+  display: flex;
+}
+
+.textAreaComp {
+  width: 400px;
+  margin-right: 5px;
+  box-shadow: -1px -1px 0 #088 inset;
+  border-radius: 3%;
+}
+.inputComp {
+  width: 150px;
+  margin-right: 5px;
+  box-shadow: -1px -1px 0 #088 inset;
+  border-radius: 3%;
+}
+
+.btnComp {
+  display: block;
+  background: #eee;
+  color: #088;
+  text-decoration: none;
+  display: block;
+  width: 90px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 10px;
+  transition: all 0.3s;
+  border-radius: 3%;
+}
+
+a.boton1:hover {
+  box-shadow: 0px -5px 0 #088 inset;
+}
