@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Message } from "./Message";
-import { Button } from "./Button";
-import { TextArea } from "./TextArea";
-import { Input } from "./Input";
+import { Message } from "../Message/Message";
+import { Button } from "../Button/Button";
+import { TextArea } from "../TextArea/TextArea";
+import { Input } from "../Input/Input";
 
 export const Form = () => {
   const [messages, setMessages] = useState([]);

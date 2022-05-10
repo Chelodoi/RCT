@@ -3,7 +3,6 @@ import { Input } from "./Input";
 import { Button } from "./Button";
 import { Message } from "./Message";
 import { TextArea } from "./TextArea";
-import { chatbot } from "./Constans";
 
 export class Form extends Component {
   state = {
@@ -14,17 +13,13 @@ export class Form extends Component {
 
   handleChangeAuthor = (ev) => {
     this.setState({ author: ev.target.value });
-    console.log(`Автор изменен ${this.state.author}`);
   };
 
   handleChangeMessage = (ev) => {
     this.setState({ message: ev.target.value });
-    console.log(`Cjj,otybt bpvtytyj ${this.state.message}`);
   };
 
   handleClick = () => {
-    // console.log(messages);
-
     this.setState({
       messages: [
         ...this.state.messages,
