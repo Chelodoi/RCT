@@ -31,7 +31,7 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     quotes: ['warn', 'double'],
     semi: ['warn', 'always'],
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['warn', 'always-multiline'],
   },
   overrides: [{
     files: ['webpack.config.js'],

@@ -33,27 +33,27 @@ describe("Button", () => {
     expect(screen.getByText("click")).toBeDisabled();
   });
 
-//   it("button have style background red", () => {
-//     render(<Button />);
-//     expect(screen.getByText("click").toHaveStyle({ backgroundColor: "red" }));
-//   });
+  //   it("button have style background red", () => {
+  //     render(<Button />);
+  //     expect(screen.getByText("click").toHaveStyle({ backgroundColor: "red" }));
+  //   });
 
-    it("button click with user event", () => {
-      const mockHandler = jest.fn();
+  //   it("button click with user event", () => {
+  //     const mockHandler = jest.fn();
 
-      render(<Button onClick={mockHandler} />);
-        
-      userEvent.onButtonClick(screen.getByText("click"));
-      expect(mockHandler).toBeCalledTimes(1);
-    });
-    it('button async click', async () => {
-        const mocHandler = jest.fn();
-        render(< Button onButtonClick={() => setTimeout(mocHandler,500)} />)
+  //     render(<Button onClick={mockHandler} />);
 
-        userEvent.onButtonClick(screen.getByText(/click/))
+  //     userEvent.onButtonClick(screen.getByText("click"));
+  //     expect(mockHandler).toBeCalledTimes(1);
+  //   });
+  //   it("button async click", async () => {
+  //     const mocHandler = jest.fn();
+  //     render(<Button onButtonClick={() => setTimeout(mocHandler, 500)} />);
 
-        await waitFor(() =>{
-            expect(mocHandler).toHaveBeenCalledTimes
-        })
-    })
+  //     userEvent.onButtonClick(screen.getByText(/click/));
+
+  //     await waitFor(() => {
+  //       expect(mocHandler).toHaveBeenCalledTimes;
+  //     });
+  //   });
 });

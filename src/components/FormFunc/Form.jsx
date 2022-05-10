@@ -27,7 +27,7 @@ export const Form = () => {
         </ul>
       )}
       <Input change={handleChange} value={value} />
-      <Button name={name} onButtonClick={handleClick} disabled={disabled}/>
+      <Button name={name} onButtonClick={handleClick} disabled={disabled} />
       <br />
       <button onClick={() => setVisible(!visible)}>
         {visible ? "hide" : "show"}
