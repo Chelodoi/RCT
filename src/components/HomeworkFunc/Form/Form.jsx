@@ -47,6 +47,12 @@ export const Form = () => {
       };
     }
   }, [messages]);
+  
+  // useEffect(()=>{
+  //   if(message !== "" && author !== ""){
+  //     setDisabled('false')
+  //   }
+  // })
 
   return (
     <div className="form">
@@ -54,7 +60,7 @@ export const Form = () => {
       <div className="sendMessage">
         <Input change={handleChangeAuthor} author={author} />
         <TextArea change={handleChangeMessage} message={message} />
-        <Button click={handleClick} />
+        <Button click={handleClick} author={author} message={message}/>
       </div>
     </div>
   );

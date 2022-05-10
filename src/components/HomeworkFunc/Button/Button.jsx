@@ -1,7 +1,8 @@
 import React from "react";
-export const Button = (props) => {
+
+export const Button = ({click, message, author}) => {
   return (
-    <button className="btnComp" onClick={props.click}>
+    <button className="btnComp" onClick={click} disabled={!message || !author}>
       Отправить
     </button>
   );
